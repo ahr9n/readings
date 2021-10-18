@@ -12,3 +12,6 @@ x4 = x2 + x2
 x5 = x2 + x3
 
 print(x, x2, x3, x4, x5, sep='---')
+
+# Rules:
+# Variable names cannot start with a number.
