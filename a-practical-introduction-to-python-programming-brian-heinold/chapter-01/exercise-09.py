@@ -13,3 +13,7 @@ total_bill_including_tip = meal_price + tip_amount
 
 print('The tip amount is:', tip_amount)  # output: 15.0
 print('The total bill with the tip included is:', total_bill_including_tip)  # output: 90.0
+
+# Rules:
+# Variable names cannot contain spaces.
+# Variable names can contain letters, numbers, and the underscore.
