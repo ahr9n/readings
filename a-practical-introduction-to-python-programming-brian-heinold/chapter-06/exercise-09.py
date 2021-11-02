@@ -7,5 +7,5 @@
 
 number = eval(input('Enter a number: '))
 
-for i in range(1, 1 + number):
-    print(' ' * i, i)
+for i in range(number):
+    print(' ' * i, i + 1, sep='')
