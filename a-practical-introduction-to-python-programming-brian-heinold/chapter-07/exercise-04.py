@@ -3,5 +3,13 @@
 
 L = input('Enter a list of numbers between 1 and 12: ')
 L = L.split()
-L = [int(i) if int(i) <= 10 else 10 for i in L]
+
+for i in range(len(L)):
+    L[i] = int(L[i])
+    if L[i] > 10:
+        L[i] = 10
+
+# L = [int(i) if int(i) <= 10 else 10 for i in L]
+# List comprehensions (next chapter)
+
 print(L)
