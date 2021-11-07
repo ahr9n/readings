@@ -8,13 +8,16 @@
 # The final list should equal [4,5,6,25,10,17,4,5,6,10,17]
 
 L = [8, 9, 10]
-L[1] = 17
+L[1] = 17  # replacing
 
-L[3:3] = [4, 5, 6]
-L[0:1] = []
+L[3:3] = [4, 5, 6]  # this is adding
+# insert() adds only one item to the list at the specified position
+
+del L[0]  # deleting
+# L[0:1] = []  # another shape, with same complexity o(n*k) ;)
 
 L.sort()
 L = L * 2
-L.insert(3, 25)
+L.insert(3, 25)  # complexity o(n)
 
 print(L)
