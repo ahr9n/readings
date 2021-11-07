@@ -2,5 +2,8 @@
 # first characters removed.
 
 L = input('Enter a list of strings: ').split()
-L = [x[1:] for x in L]
+for i in range(len(L)):
+    L[i] = L[i][1:]  # removing in strings
+
+# L = [x[1:] for x in L]
 print(L)
