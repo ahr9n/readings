@@ -9,7 +9,9 @@
 
 
 list_of_numbers = input('Enter a list of numbers: ')
+
 list_of_numbers = list_of_numbers.split()
+# explained in next chapter, but necessary to do it here
 
 print('The total number of items in the list is:', len(list_of_numbers))
 print('The last item in the list is:', list_of_numbers[-1])
