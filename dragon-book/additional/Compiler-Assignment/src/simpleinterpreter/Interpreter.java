@@ -51,6 +51,10 @@ class Interpreter implements Expr.Visitor<Object> {
                       - Use 'evaluate()' function to evaluate (expr.right) then return the negated expression instead of null.
            ###############################################################################
 */
+        Object right = evaluate(expr.right);
+        switch (expr.operator.type) {
+            case MINUS: return -(double) right;
+        }
 
         return null;
     }
