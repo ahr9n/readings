@@ -77,3 +77,10 @@ else:
         days_between += 1
 
 print('The number of days between the two dates, excluding, is:', days_between)
+
+# Another answer using 'datetime' module:
+# from datetime import date
+# d0 = date(first_year, first_month, first_day)
+# d1 = date(second_year, second_month, second_day)
+# delta = abs(d1 - d0)
+# print('The number of days between the two dates, excluding, is:', delta.days - 1)
