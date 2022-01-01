@@ -68,8 +68,11 @@ class Parser {
 */
 
         /* TODO: Add your code below this comment: */
-
-
+        while (match(SLASH, STAR)) {
+            Token operator = previous();
+            Expr right = factor();
+            expr = new Expr.Binary(expr, operator, right);
+        }
 
         return expr;
     }
