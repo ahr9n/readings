@@ -47,7 +47,7 @@ class Parser {
                       - Don't add new lines of code, just update the condition.
            ###############################################################################
 */
-        while (match(PLUS)) {
+        while (match(PLUS, MINUS)) {
             Token operator = previous();
             Expr right = factor();
             expr = new Expr.Binary(expr, operator, right);
