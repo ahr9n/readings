@@ -86,7 +86,11 @@ class Parser {
 */
 
         /* TODO: Add your code below this comment: */
-
+        if (match(MINUS)) {
+            Token operator = previous();
+            Expr right = unary();
+            return new Expr.Unary(operator, right);
+        }
 
         return number();
     }
