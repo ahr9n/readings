@@ -34,7 +34,9 @@ class Interpreter implements Expr.Visitor<Object> {
 */
             case PLUS: return (double)left + (double)right; // Take this line as a guide.
             /* TODO: Add your code below this comment: */
-
+            case MINUS: return (double) left - (double) right;
+            case SLASH: return (double) left / (double) right;
+            case STAR:  return (double) left * (double) right;
 
         }
 
