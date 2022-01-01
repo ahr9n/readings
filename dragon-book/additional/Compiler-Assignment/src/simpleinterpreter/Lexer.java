@@ -41,7 +41,9 @@ class Lexer {
 
             case '+': addToken(PLUS); break; // Take this line as a guide.
             /* TODO: Add your code below this comment: */
-
+            case '-': addToken(MINUS); break;
+            case '*': addToken(STAR); break;
+            case '/': addToken(SLASH); break;
 
             case ' ': break;
             case '\n': line++; break;
