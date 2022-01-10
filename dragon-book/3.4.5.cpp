@@ -43,9 +43,6 @@ vector<int> KMP(string txt, string pattern) {
 
 int main() {
     ios_base::sync_with_stdio(0), cin.tie(0);
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-#endif /*ONLINE_JUDGE*/
 
     string pattern;
     cin >> pattern;
