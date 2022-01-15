@@ -63,7 +63,7 @@ if years == 0:
 
 # It is always that years > 0, so get days from first_date till the end of first_year
 days_between = days[first_month] - first_day
-if first_year % 4 == 0 and first_month <= 2:            # 02/14/2010 - 05/23/2010
+if first_year % 4 == 0 and first_month <= 2:            # 02/14/2010 - 05/23/2011
     days_between += 1
 for month in range(first_month + 1, 13):
     days_between += days[month]
