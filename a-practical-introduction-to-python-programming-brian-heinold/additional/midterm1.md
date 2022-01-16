@@ -35,6 +35,8 @@ for rate in rates:
 print('\nFrequency of rate of appreciations:')
 for key, value in frequency.items():
     print(key, ': ', value, sep='')
+
+# End of program
 ```
 
 ---
@@ -123,6 +125,7 @@ if second_year % 4 == 0 and second_month > 2:  # 02/14/2010 - 05/23/2014
 days_between += second_day - 1
 
 print('The number of days between the two dates, excluding, is:', days_between)
+
 # End of program
 ```
 

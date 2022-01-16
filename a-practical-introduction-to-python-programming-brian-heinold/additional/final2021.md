@@ -88,10 +88,13 @@ print('The encrypted string is:', encrypted)
 
 decrypted = decrypt(encrypted)
 print('The decrypted string is:', decrypted)
+
+# End of program
 ```
 
 _*See a simple
-version: [`chapter-06/exercise-22.py`](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-introduction-to-python-programming-brian-heinold/chapter-06/exercise-22.py)_
+version: [`chapter-06/exercise-22.py`](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-introduction-to-python-programming-brian-heinold/chapter-06/exercise-22.py)
+._
 
 ---
 
@@ -103,3 +106,4 @@ in [midterm2.md](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-
 
 **Question 4:** _Same
 as [`gui/exercise-03.py`](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-introduction-to-python-programming-brian-heinold/additional/gui/exercise-03.py)
+._
