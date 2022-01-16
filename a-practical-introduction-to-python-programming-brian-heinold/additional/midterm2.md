@@ -1,9 +1,9 @@
 <h1 align="center">Midterm Exam (2)</h1>
 
-**1. Write a program that repeatedly asks the user to enter product names and prices. Store all of these in a dictionary
-whose keys are the product names and whose values are the prices. When the user is done entering products and prices,
-allow them to repeatedly enter a product name and print the corresponding price or a message if the product is not in
-the dictionary.**
+**Question 1:** Write a program that repeatedly asks the user to enter product names and prices. Store all of these in a
+dictionary whose keys are the product names and whose values are the prices. When the user is done entering products and
+prices, allow them to repeatedly enter a product name and print the corresponding price or a message if the product is
+not in the dictionary.
 
 **Answer:**
 See [`chapter-11/exercise-01.py`](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-introduction-to-python-programming-brian-heinold/chapter-11/exercise-01.py)
@@ -12,7 +12,7 @@ _*For the sake of simplicity, you also could ask user for entering number of pro
 
 ---
 
-**2. Write a Python program that uses a class called DATE, a class called Todays_date, and a class called
+**Question 2:** Write a Python program that uses a class called DATE, a class called Todays_date, and a class called
 Persons_Birth_Date. The class DATE would be the parent class for the other two classes and should include fields namely:
 day, month, and year. The user will be allowed to enter the date of today and his birth date, and the program would use
 a function called Calculate_Age() to calculate and print the age of the user in a suitable format.**
