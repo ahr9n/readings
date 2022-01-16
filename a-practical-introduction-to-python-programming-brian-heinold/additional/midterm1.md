@@ -1,3 +1,43 @@
+<h1 align="center">Midterm Exam (1)</h1>
+
+**1.Write a Python program that:
+a) Read a list of students' grades of some course out of 100.
+b) The program then translates numeric grades into rate of appreciation (Excellent, Very Good, etc.).
+c) The program calculates and stores the frequencies of rate of appreciations into a Python dictionary.
+d) The content of the dictionary are then printed in a tabular form.**
+
+**Answer:**
+
+```python
+grades = input('Enter grades out of 100: ').split()
+
+rates = []
+for grade in grades:
+    if 85 <= int(grade) <= 100:
+        rates.append('Excellent')
+    elif 75 <= int(grade):
+        rates.append('Very Good')
+    elif 65 <= int(grade):
+        rates.append('Good')
+    elif 50 <= int(grade):
+        rates.append('Pass')
+    else:
+        rates.append('Fail')
+
+frequency = {}
+for rate in rates:
+    if rate in frequency:
+        frequency[rate] += 1
+    else:
+        frequency[rate] = 1
+        
+print('\nFrequency of grades:')
+for key, value in frequency.items():
+    print(key, ':', value)
+```
+
+---
+
 **2. Given two dates entered as strings in the format mm/dd/yyyy, where the years are between 1901 and 2099.
 Determine the number of days between the two dates, considering leap years.**
 
