@@ -1,9 +1,9 @@
 <h1 align="center">Midterm Exam (1)</h1>
 
-**1.Write a Python program that:
+**Question 1:** Write a Python program that:
 a) Read a list of students' grades of some course out of 100. b) The program then translates numeric grades into rate of
 appreciation (Excellent, Very Good, etc.). c) The program calculates and stores the frequencies of rate of appreciations
-into a Python dictionary. d) The content of the dictionary are then printed in a tabular form.**
+into a Python dictionary. d) The content of the dictionary are then printed in a tabular form.
 
 **Answer:**
 
@@ -14,14 +14,16 @@ rates = []
 for grade in grades:
     if 85 <= int(grade) <= 100:
         rates.append('Excellent')
-    elif 75 <= int(grade):
+    elif 75 <= int(grade) <= 84:
         rates.append('Very Good')
-    elif 65 <= int(grade):
+    elif 65 <= int(grade) <= 74:
         rates.append('Good')
-    elif 50 <= int(grade):
+    elif 50 <= int(grade) <= 64:
         rates.append('Pass')
-    else:
+    elif 0 <= int(grade) <= 49:
         rates.append('Fail')
+    else:
+        rates.append('Invalid input')
 
 frequency = {}
 for rate in rates:
@@ -30,15 +32,15 @@ for rate in rates:
     else:
         frequency[rate] = 1
 
-print('\nFrequency of grades:')
+print('\nFrequency of rate of appreciations:')
 for key, value in frequency.items():
-    print(key, ':', value)
+    print(key, ': ', value, sep='')
 ```
 
 ---
 
-**2. Given two dates entered as strings in the format mm/dd/yyyy, where the years are between 1901 and 2099. Determine
-the number of days between the two dates, considering leap years.**
+**Question 2:** Given two dates entered as strings in the format mm/dd/yyyy, where the years are between 1901 and 2099.
+Determine the number of days between the two dates, considering leap years.
 
 **Answer:** This should be BASED ON inclusion-exclusion principle.
 
