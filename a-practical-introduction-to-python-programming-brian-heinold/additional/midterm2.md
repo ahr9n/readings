@@ -6,7 +6,7 @@ prices, allow them to repeatedly enter a product name and print the correspondin
 not in the dictionary.
 
 **Answer:**
-See [`chapter-11/exercise-01.py`](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-introduction-to-python-programming-brian-heinold/chapter-11/exercise-01.py)
+See [`chapter-11/exercise-01.py`](https://github.com/ahr9n/readings/blob/main/a-practical-introduction-to-python-programming-brian-heinold/chapter-11/exercise-01.py)
 
 _*For the sake of simplicity, you also could ask user for entering number of products._
 
@@ -73,5 +73,5 @@ print(f'Today, you have lived {age[0]} years, {age[1]} months, and {age[2]} days
 ```
 
 _*See the second question
-in [midterm1.md](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-introduction-to-python-programming-brian-heinold/additional/midterm1.md)
+in [midterm1.md](https://github.com/ahr9n/readings/blob/main/a-practical-introduction-to-python-programming-brian-heinold/additional/midterm1.md)
 for more details._

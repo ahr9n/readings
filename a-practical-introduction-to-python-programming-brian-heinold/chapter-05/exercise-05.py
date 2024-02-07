@@ -6,7 +6,7 @@ number = eval(input('Enter a number: '))
 sum = 0
 
 # Efficient algorithm. Time Complexity: O(sqrt(n)).
-# See: awesome-reading/a-practical-introduction-to-python-programming-brian-heinold/chapter-04/exercise-09.py
+# See: readings/a-practical-introduction-to-python-programming-brian-heinold/chapter-04/exercise-09.py
 root = math.floor(math.sqrt(number))
 for i in range(1, root + 1):
     if number % i == 0:

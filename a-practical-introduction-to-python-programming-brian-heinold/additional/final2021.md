@@ -93,17 +93,17 @@ print('The decrypted string is:', decrypted)
 ```
 
 _*See a simple
-version: [`chapter-06/exercise-22.py`](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-introduction-to-python-programming-brian-heinold/chapter-06/exercise-22.py)
+version: [`chapter-06/exercise-22.py`](https://github.com/ahr9n/readings/blob/main/a-practical-introduction-to-python-programming-brian-heinold/chapter-06/exercise-22.py)
 ._
 
 ---
 
 **Question 3:** _Same as question 2
-in [midterm2.md](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-introduction-to-python-programming-brian-heinold/additional/midterm2.md)
+in [midterm2.md](https://github.com/ahr9n/readings/blob/main/a-practical-introduction-to-python-programming-brian-heinold/additional/midterm2.md)
 ._
 
 ---
 
 **Question 4:** _Same
-as [`gui/exercise-03.py`](https://github.com/ahr9n/awesome-reading/blob/main/a-practical-introduction-to-python-programming-brian-heinold/additional/gui/exercise-03.py)
+as [`gui/exercise-03.py`](https://github.com/ahr9n/readings/blob/main/a-practical-introduction-to-python-programming-brian-heinold/additional/gui/exercise-03.py)
 ._

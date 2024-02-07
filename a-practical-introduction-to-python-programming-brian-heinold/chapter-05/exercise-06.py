@@ -9,7 +9,7 @@ import math
 
 print('Perfect numbers are:')
 # Efficient algorithm. Time Complexity: O(sqrt(n)).
-# See: awesome-reading/a-practical-introduction-to-python-programming-brian-heinold/chapter-04/exercise-09.py
+# See: readings/a-practical-introduction-to-python-programming-brian-heinold/chapter-04/exercise-09.py
 
 for number in range(1000, 10000):  # four less than 10000
     root, div_sum = math.floor(math.sqrt(number)), 0
