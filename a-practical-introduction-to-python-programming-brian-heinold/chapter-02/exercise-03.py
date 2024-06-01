@@ -9,4 +9,4 @@
 # 100 Your name
 
 for i in range(100):
-    print(i + 1, 'Ahmad Abdulrahman')
+    print(i + 1, "Ahmad Abdulrahman")

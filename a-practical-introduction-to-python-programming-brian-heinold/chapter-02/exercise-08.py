@@ -4,8 +4,8 @@
 # Enter your name: Ahmad Abdulrahman
 # How many times do you need to print your name? 10
 
-name = input('Enter your name: ')
-times = eval(input('How many times do you need to print your name? '))
+name = input("Enter your name: ")
+times = eval(input("How many times do you need to print your name? "))
 
 for i in range(times):
     print(name)

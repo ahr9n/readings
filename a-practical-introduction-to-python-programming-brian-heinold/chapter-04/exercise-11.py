@@ -8,8 +8,8 @@
 # How many hours ahead? 5
 # New hour: 1 pm
 
-hour = eval(input('Enter an hour: '))
-flag = eval(input('am (1) or pm (2)? '))
+hour = eval(input("Enter an hour: "))
+flag = eval(input("am (1) or pm (2)? "))
 flag -= 1
 
 # converting first to 24-style makes it easier
@@ -18,7 +18,7 @@ if flag == 0 and hour == 12:
 elif flag == 1 and hour != 12:
     hour += 12
 
-hours_ahead = eval(input('How many hours ahead? '))
+hours_ahead = eval(input("How many hours ahead? "))
 
 hour = (hour + hours_ahead) % 24
 
@@ -31,4 +31,4 @@ elif hour >= 12:
     if hour > 12:
         hour %= 12
 
-print('New hour:', hour, 'ap'[flag] + 'm')
+print("New hour:", hour, "ap"[flag] + "m")

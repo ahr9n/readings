@@ -7,7 +7,7 @@
 
 import math
 
-print('Perfect numbers are:')
+print("Perfect numbers are:")
 # Efficient algorithm. Time Complexity: O(sqrt(n)).
 # See: readings/a-practical-introduction-to-python-programming-brian-heinold/chapter-04/exercise-09.py
 

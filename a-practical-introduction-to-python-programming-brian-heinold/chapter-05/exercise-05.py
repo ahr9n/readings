@@ -2,7 +2,8 @@
 # that number. The sum of the divisors of a number is an important function in number theory.
 
 import math
-number = eval(input('Enter a number: '))
+
+number = eval(input("Enter a number: "))
 sum = 0
 
 # Efficient algorithm. Time Complexity: O(sqrt(n)).
@@ -14,4 +15,4 @@ for i in range(1, root + 1):
         if (number // i) != i:
             sum += number // i
 
-print('The sum of the divisors of', number, 'is', sum)
+print("The sum of the divisors of", number, "is", sum)

@@ -6,7 +6,7 @@
 
 import math
 
-number = eval(input('Enter a number: '))
+number = eval(input("Enter a number: "))
 
 # Efficient algorithm. Time Complexity: O(sqrt(n)).
 # See: readings/a-practical-introduction-to-python-programming-brian-heinold/chapter-04/exercise-09.py
@@ -27,6 +27,6 @@ for i in range(2, root + 1):
                 flag = False
 
 if flag:
-    print('It is a \'squarefree\'.')
+    print("It is a 'squarefree'.")
 else:
-    print('It is not a \'squarefree\'.')
+    print("It is not a 'squarefree'.")

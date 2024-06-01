@@ -4,19 +4,27 @@
 # enter a 2, then the program converts to yards, etc. While this can be done with if statements,
 # it is much shorter with lists and it is also easier to add new conversions if you use lists.
 
-feet = eval(input('Enter a length in feet: '))
-options = ['inches', 'yards', 'miles', 'millimeters', 'centimeters', 'meters', 'kilometers']
-convert_factor = [12, 1/3, 1/5280, 304.8, 30.48, 0.3048, 1/3280.84]
+feet = eval(input("Enter a length in feet: "))
+options = [
+    "inches",
+    "yards",
+    "miles",
+    "millimeters",
+    "centimeters",
+    "meters",
+    "kilometers",
+]
+convert_factor = [12, 1 / 3, 1 / 5280, 304.8, 30.48, 0.3048, 1 / 3280.84]
 
-print('Choose a unit to convert to: ')  # display options
+print("Choose a unit to convert to: ")  # display options
 for i in range(len(options)):
-    print(f'Enter {i+1} for {options[i]}')
+    print(f"Enter {i+1} for {options[i]}")
 
-convert = eval(input('Enter a number: '))
+convert = eval(input("Enter a number: "))
 if convert > 7 or convert < 1:
-    print('Invalid choice')
+    print("Invalid choice")
 else:
-    print(f'{feet} feet is {feet * convert_factor[convert-1]} {options[convert-1]}')
+    print(f"{feet} feet is {feet * convert_factor[convert-1]} {options[convert-1]}")
 
 # if convert == 1:
 #     inches = feet * 12

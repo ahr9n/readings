@@ -8,7 +8,7 @@ L1, L2, L3 = [], [], []
 for i in range(50):
     L1.append(i)
 for i in range(1, 51):
-    L2.append(i ** 2)
+    L2.append(i**2)
 for i in range(26):
     L3.append(chr(97 + i) * (i + 1))
 

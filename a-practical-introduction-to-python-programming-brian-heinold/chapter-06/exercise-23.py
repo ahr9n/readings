@@ -13,9 +13,9 @@
 # cipher.
 # (d) Write a decryption program for the general case.
 
-s = input('Enter a string: ')
+s = input("Enter a string: ")
 # rail-fence cipher in the threes case:
-one, two, three = '', '', ''  # initialization
+one, two, three = "", "", ""  # initialization
 for i in range(0, len(s), 3):
     one += s[i]
 for i in range(1, len(s), 3):
@@ -23,10 +23,10 @@ for i in range(1, len(s), 3):
 for i in range(2, len(s), 3):
     three += s[i]
 encrypted = one + two + three
-print('The encrypted string is:', encrypted)
+print("The encrypted string is:", encrypted)
 
 # decryption program for the threes case
-decrypted, one_idx, two_idx, three_idx = '', 0, 0, 0
+decrypted, one_idx, two_idx, three_idx = "", 0, 0, 0
 for i in range(len(s)):
     if i % 3 == 0:
         decrypted += one[one_idx]
@@ -37,16 +37,16 @@ for i in range(len(s)):
     else:
         decrypted += three[three_idx]
         three_idx += 1
-print('The decrypted string is:', decrypted)
+print("The decrypted string is:", decrypted)
 
 # manual encryption
-s = input('Enter a string: ')
-rail = eval(input('Enter an integer, to break things up in it: '))
-encrypted = ''
+s = input("Enter a string: ")
+rail = eval(input("Enter an integer, to break things up in it: "))
+encrypted = ""
 for i in range(rail):
     for j in range(i, len(s), rail):
         encrypted += s[j]
-print(f'The encrypted string in {rail}\'s is:', encrypted)
+print(f"The encrypted string in {rail}'s is:", encrypted)
 
 # decrypt rail-fence cipher
 
@@ -58,12 +58,12 @@ for i in range(rail):
     list_idx.append(0)
     lst += 1
 
-decrypted = ''
+decrypted = ""
 for i in range(len(s)):
     for j in range(rail):
         if i % rail == j:
             decrypted += list[j][list_idx[j]]
             list_idx[j] += 1
-print('The decrypted string is:', decrypted)
+print("The decrypted string is:", decrypted)
 
 # too much unnecessary effort, if I want to do it manually, list is enough :)

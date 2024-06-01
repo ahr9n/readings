@@ -19,8 +19,8 @@
 
 import math
 
-y = eval(input('Enter a year: '))  # 2021
-c = (y // 100) % 100               # 20
+y = eval(input("Enter a year: "))  # 2021
+c = (y // 100) % 100  # 20
 
 m = (15 + c - math.floor(c / 4) - math.floor((8 * c + 13) / 25)) % 30
 n = (4 + c - math.floor(c / 4)) % 7
@@ -41,13 +41,15 @@ if easter2 >= 1 and easter2 <= 30:
     avail2 = 1
 
 if d == 29 and e == 6:
-    print('Easter falls on April 19.')
+    print("Easter falls on April 19.")
 elif d == 28 and e == 6 and m in [2, 5, 10, 13, 16, 21, 24, 39]:
-    print('Easter falls on April 18.')
+    print("Easter falls on April 18.")
 else:
-    if avail1 and avail2: # # I think it is impossible, yet I am not interested in timing ;)
-        print('Easter falls on either March', easter1, 'or April', easter2)
+    if (
+        avail1 and avail2
+    ):  # # I think it is impossible, yet I am not interested in timing ;)
+        print("Easter falls on either March", easter1, "or April", easter2)
     elif avail1:
-        print('Easter falls on March', easter1)
+        print("Easter falls on March", easter1)
     else:
-        print('Easter falls on April', easter2)
+        print("Easter falls on April", easter2)

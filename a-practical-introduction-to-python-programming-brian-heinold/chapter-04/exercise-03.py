@@ -9,20 +9,19 @@
 # • If it is 100, print that the temperature is at the boiling point.
 # • If it is above 100, print that the temperature is above the boiling point.
 
-C = eval(input('Enter a temperature in Celsius: '))
+C = eval(input("Enter a temperature in Celsius: "))
 
 if C < -273.15:
-    print('The temperature is invalid because it is below absolute zero.')
+    print("The temperature is invalid because it is below absolute zero.")
 elif C == -273.15:
-    print('The temperature is absolute 0.')
+    print("The temperature is absolute 0.")
 elif -273.15 < C < 0:  # Power of Python :)
-    print('The temperature is below freezing.')
+    print("The temperature is below freezing.")
 elif C == 0:
-    print('The temperature is at the freezing point.')
+    print("The temperature is at the freezing point.")
 elif 0 < C < 100:
-    print('The temperature is in the normal range.')
+    print("The temperature is in the normal range.")
 elif C == 100:
-    print('The temperature is at the boiling point.')
+    print("The temperature is at the boiling point.")
 else:
-    print('The temperature is above the boiling point.')
-    
+    print("The temperature is above the boiling point.")

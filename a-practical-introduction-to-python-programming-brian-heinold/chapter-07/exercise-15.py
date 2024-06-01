@@ -19,7 +19,7 @@
 
 from random import randint
 
-message = input('Enter a message: ')
+message = input("Enter a message: ")
 message = message.lower()
 
 shifts = []
@@ -27,19 +27,23 @@ for i in range(len(message)):
     shifts.append(randint(1, 26))
 
 # encrypt
-encrypted_message = ''
+encrypted_message = ""
 for i in range(len(message)):
     if message[i].isalpha():
-        encrypted_message += chr((ord(message[i]) - ord('a') + shifts[i]) % 26 + ord('a'))
+        encrypted_message += chr(
+            (ord(message[i]) - ord("a") + shifts[i]) % 26 + ord("a")
+        )
     else:
         encrypted_message += message[i]
-print('Encrypted message:', encrypted_message)
+print("Encrypted message:", encrypted_message)
 
 # decrypt
-decrypted_message = ''
+decrypted_message = ""
 for i in range(len(message)):
     if message[i].isalpha():
-        decrypted_message += chr((ord(encrypted_message[i]) - ord('a') - shifts[i]) % 26 + ord('a'))
+        decrypted_message += chr(
+            (ord(encrypted_message[i]) - ord("a") - shifts[i]) % 26 + ord("a")
+        )
     else:
         decrypted_message += message[i]
-print('Decrypted message:', decrypted_message)
+print("Decrypted message:", decrypted_message)

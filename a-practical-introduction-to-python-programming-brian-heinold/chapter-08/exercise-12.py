@@ -16,8 +16,8 @@
 # Invalid
 
 while True:
-    phone_number = input('Enter a phone number: ')
-    phone_number = phone_number.replace(' ', '')
+    phone_number = input("Enter a phone number: ")
+    phone_number = phone_number.replace(" ", "")
 
     if len(phone_number) == 12:
         digits = 0
@@ -26,26 +26,26 @@ while True:
                 digits += 1
 
         good_dashs = True
-        if phone_number[3] != '-' or phone_number[7] != '-':
+        if phone_number[3] != "-" or phone_number[7] != "-":
             good_dashs = False
 
         if digits == 10 and good_dashs:
-            print('Valid')
+            print("Valid")
         else:
-            print('Invalid')
-    elif len(phone_number) == 14 and phone_number[0] == '1':
+            print("Invalid")
+    elif len(phone_number) == 14 and phone_number[0] == "1":
         digits = 0
         for i in range(len(phone_number)):
             if phone_number[i].isdigit():
                 digits += 1
 
         good_dashs = True
-        if phone_number[1] != '-' or phone_number[5] != '-' or phone_number[9] != '-':
+        if phone_number[1] != "-" or phone_number[5] != "-" or phone_number[9] != "-":
             good_dashs = False
 
         if digits == 11 and good_dashs:
-            print('Valid')
+            print("Valid")
         else:
-            print('Invalid')
+            print("Invalid")
     else:
-        print('Invalid')
+        print("Invalid")

@@ -5,8 +5,30 @@
 
 import random
 
-questions = ["What is the capital of France?", "What is the capital of Germany?", "What is the capital of Italy?", "What is the capital of Spain?", "What is the capital of Portugal?", "What is the capital of Belgium?", "What is the capital of Denmark?", "What is the capital of Sweden?", "What is the capital of Norway?", "What is the capital of Finland?"]
-answers = ["Paris", "Berlin", "Rome", "Madrid", "Lisbon", "Brussels", "Copenhagen", "Stockholm", "Oslo", "Helsinki"]
+questions = [
+    "What is the capital of France?",
+    "What is the capital of Germany?",
+    "What is the capital of Italy?",
+    "What is the capital of Spain?",
+    "What is the capital of Portugal?",
+    "What is the capital of Belgium?",
+    "What is the capital of Denmark?",
+    "What is the capital of Sweden?",
+    "What is the capital of Norway?",
+    "What is the capital of Finland?",
+]
+answers = [
+    "Paris",
+    "Berlin",
+    "Rome",
+    "Madrid",
+    "Lisbon",
+    "Brussels",
+    "Copenhagen",
+    "Stockholm",
+    "Oslo",
+    "Helsinki",
+]
 
 cnt = 0
 for i in range(4):

@@ -16,10 +16,12 @@
 # PLAY BASKETBALL today in class. I can't wait for tomorrow's
 # class!
 
-competition = input('Enter a competition: ')  # ICPC
-adjective = input('Enter an adjective: ')  # interesting
-activity = input('Enter an activity: ')  # deal with the daily problems
+competition = input("Enter a competition: ")  # ICPC
+adjective = input("Enter an adjective: ")  # interesting
+activity = input("Enter an activity: ")  # deal with the daily problems
 
-print(f'{conmpetition} was really {adjective} today. '
-      f'We learn how to {activity} in it. '
-      f'I can\'t wait for next year\'s one!')
+print(
+    f"{conmpetition} was really {adjective} today. "
+    f"We learn how to {activity} in it. "
+    f"I can't wait for next year's one!"
+)

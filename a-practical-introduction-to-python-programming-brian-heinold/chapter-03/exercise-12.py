@@ -2,7 +2,7 @@
 
 import math
 
-number = eval(input('Enter a number: '))
+number = eval(input("Enter a number: "))
 result = math.factorial(number)
 
-print('Factorial of', number, 'is', result)
+print("Factorial of", number, "is", result)

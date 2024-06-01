@@ -3,5 +3,5 @@
 
 for i in range(100):
     for j in range(100):
-        print('AhmadAbdulrahman', end='')
-    print('')  # to start a new line
+        print("AhmadAbdulrahman", end="")
+    print("")  # to start a new line

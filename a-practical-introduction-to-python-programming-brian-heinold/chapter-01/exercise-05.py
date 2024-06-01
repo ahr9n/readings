@@ -5,6 +5,6 @@
 # Enter a number: 5
 # The square of 5 is 25.
 
-number = eval(input('Enter a number: '))
+number = eval(input("Enter a number: "))
 square = number * number
-print('The square of ', number, ' is ', square, '.', sep='')
+print("The square of ", number, " is ", square, ".", sep="")

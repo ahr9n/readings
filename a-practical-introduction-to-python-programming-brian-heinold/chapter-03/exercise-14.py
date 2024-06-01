@@ -3,7 +3,7 @@
 
 import math
 
-angle_degree = eval(input('Enter an angle in degrees: '))
+angle_degree = eval(input("Enter an angle in degrees: "))
 
 # Note: Trigonometric functions receive the parameters only in radian
 # Now, we should convert angle from degrees to radian
@@ -13,4 +13,4 @@ angle_radian = angle_degree / 180 * math.pi
 
 sine = math.sin(angle_radian)
 
-print('Sine of ', angle_degree, '◦ is ', sine, sep='')
+print("Sine of ", angle_degree, "◦ is ", sine, sep="")

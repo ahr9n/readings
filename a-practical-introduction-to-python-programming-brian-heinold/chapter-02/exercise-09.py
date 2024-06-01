@@ -5,7 +5,7 @@
 
 # How many Fibonacci numbers to print? 10
 
-times = eval(input('How many Fibonacci numbers to print? '))
+times = eval(input("How many Fibonacci numbers to print? "))
 
 first = 1
 second = 1

@@ -6,7 +6,7 @@
 
 # probably, he meant 'L' not 's'
 
-L = ['ahmad', 'ali', 'mohammad', 'hi']
+L = ["ahmad", "ali", "mohammad", "hi"]
 
 new_list_a = [x[1:] for x in L]
 print(new_list_a)
@@ -16,4 +16,3 @@ print(new_list_b)
 
 new_list_c = [x for x in L if len(x) >= 3]
 print(new_list_c)
-

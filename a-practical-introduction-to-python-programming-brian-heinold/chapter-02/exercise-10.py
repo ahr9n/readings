@@ -8,8 +8,8 @@
 # How wide should the box be? 19
 # How high should the box be? 4
 
-wide = eval(input('How wide should the box be? '))
-high = eval(input('How high should the box be? '))
+wide = eval(input("How wide should the box be? "))
+high = eval(input("How high should the box be? "))
 
 for i in range(high):
-    print('*' * wide)
+    print("*" * wide)

@@ -6,7 +6,7 @@
 
 from random import sample
 
-s = input('Enter a string: ')
-print(''.join(sample(s, len(s))))
+s = input("Enter a string: ")
+print("".join(sample(s, len(s))))
 
 # join the string here means to join the elements of the returned list from sample()

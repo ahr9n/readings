@@ -7,13 +7,13 @@ from random import randint
 points = 0
 for i in range(10):
     number = randint(1, 10)
-    guess = eval(input('Guess a number between 1 and 10: '))
+    guess = eval(input("Guess a number between 1 and 10: "))
 
     if guess == number:
         points += 10
-        print('You are right!')
+        print("You are right!")
     else:
         points -= 1
-        print('You are wrong.')
+        print("You are wrong.")
 
-print('Your final points:', points)
+print("Your final points:", points)

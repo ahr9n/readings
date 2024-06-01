@@ -6,7 +6,7 @@
 # input: factor * variable ** exponent
 # assume: factor and exponent are integers
 
-expression = input('Enter an expression like x^3 or x^25: ')
+expression = input("Enter an expression like x^3 or x^25: ")
 
 factor, idx = 0, 0
 if expression[0].isalpha():
@@ -17,25 +17,27 @@ else:
         if expression[i].isalpha():
             factor = int(expression[0:i])
             break
-            
+
 # input: factor
 if idx == len(expression) - 1 and expression[idx].isdigit():
-    print('The derivative of', expression, 'is 0.')
+    print("The derivative of", expression, "is 0.")
     exit()
 
-variable = ''
+variable = ""
 for i in range(idx, len(expression)):
     idx = i
-    if expression[i] == '^':
+    if expression[i] == "^":
         variable = expression[idx:i]
         break
 
 if idx == len(expression) - 1:  # input: factor * variable
     exponent = 0
 else:  # input: factor * variable ** exponent
-    exponent = int(expression[idx+1:])
+    exponent = int(expression[idx + 1 :])
 
 if exponent == 0:
-    print('The derivative of', expression, f'is {factor}.')
+    print("The derivative of", expression, f"is {factor}.")
 else:
-    print(f'The derivative of {expression} is {factor*exponent}*{variable}^{exponent-1}')
+    print(
+        f"The derivative of {expression} is {factor*exponent}*{variable}^{exponent-1}"
+    )

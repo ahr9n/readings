@@ -5,7 +5,7 @@
 #   3
 #    4
 
-number = eval(input('Enter a number: '))
+number = eval(input("Enter a number: "))
 
 for i in range(number):
-    print(' ' * i, i + 1, sep='')
+    print(" " * i, i + 1, sep="")

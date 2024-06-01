@@ -7,8 +7,8 @@
 
 # How high should the triangle be? 4
 
-high = eval(input('How high should the triangle be? '))
+high = eval(input("How high should the triangle be? "))
 
 for i in range(high):
     wide = i + 1
-    print('*' * wide)
+    print("*" * wide)

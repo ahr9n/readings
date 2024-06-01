@@ -11,17 +11,17 @@ L = []
 for i in range(20):
     L.append(random.randint(1, 100))
 
-print('The list is:', L)
-print('Average:', sum(L) / len(L))
+print("The list is:", L)
+print("Average:", sum(L) / len(L))
 
 L.sort()
-print('Largest:', L[-1])
-print('Smallest:', L[0])
-print('Second largest:', L[-2])
-print('Second smallest:', L[1])
+print("Largest:", L[-1])
+print("Smallest:", L[0])
+print("Second largest:", L[-2])
+print("Second smallest:", L[1])
 
 even = 0
 for i in L:
     if i % 2 == 0:
         even += 1
-print('Even numbers:', even)
+print("Even numbers:", even)

@@ -8,7 +8,7 @@
 # **** it. Oh well, it was a **** of a ****** try.
 
 curse_words = ["darn", "dang", "freakin", "heck", "shoot"]
-txt = input('Enter some text: ').split()
+txt = input("Enter some text: ").split()
 
-txt = [word if word not in curse_words else '*' * len(word) for word in txt]
-print(' '.join(txt))
+txt = [word if word not in curse_words else "*" * len(word) for word in txt]
+print(" ".join(txt))

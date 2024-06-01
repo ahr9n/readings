@@ -3,30 +3,34 @@
 # 3*(x+5). Write a program that asks the user for an algebraic expression and then inserts
 # multiplication symbols where appropriate.
 
-expression = input('Enter an algebraic expression: ')
+expression = input("Enter an algebraic expression: ")
 
-new_expression = ''
+new_expression = ""
 for i in range(len(expression) - 1, -1, -1):
-    if not expression[i].isdigit() and i + 1 < len(expression) and expression[i + 1].isalpha():
-        new_expression += '*1'
-    if expression[i].isdigit() or expression[i] in '+-*\\)':
+    if (
+        not expression[i].isdigit()
+        and i + 1 < len(expression)
+        and expression[i + 1].isalpha()
+    ):
+        new_expression += "*1"
+    if expression[i].isdigit() or expression[i] in "+-*\\)":
         new_expression += expression[i]
     elif expression[i].isalpha():
         if expression[i - 1].isdigit():
-            new_expression += expression[i] + '*'
+            new_expression += expression[i] + "*"
         else:
             new_expression += expression[i]
-    elif expression[i] == '(':
-        if expression[i - 1].isalpha() or expression[i - 1] == ')':
-            new_expression += expression[i] + '*'
+    elif expression[i] == "(":
+        if expression[i - 1].isalpha() or expression[i - 1] == ")":
+            new_expression += expression[i] + "*"
         else:
             new_expression += expression[i]
 
 new_expression = new_expression[::-1]
 if new_expression[0].isalpha():
-    new_expression = '1*' + new_expression
-elif new_expression[0] == '*':
-    new_expression = '1' + new_expression
+    new_expression = "1*" + new_expression
+elif new_expression[0] == "*":
+    new_expression = "1" + new_expression
 
 print(new_expression)
 

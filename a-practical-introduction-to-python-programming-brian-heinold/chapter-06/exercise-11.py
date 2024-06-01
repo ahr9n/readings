@@ -7,7 +7,7 @@
 # buffa
 # lo
 
-word = input('Enter a word: ')
-idx = word.find('a')
-print(word[:idx + 1])
-print(word[idx + 1:])
+word = input("Enter a word: ")
+idx = word.find("a")
+print(word[: idx + 1])
+print(word[idx + 1 :])

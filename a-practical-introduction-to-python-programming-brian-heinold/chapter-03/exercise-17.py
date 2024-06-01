@@ -3,7 +3,7 @@
 # determine how many leap years there have been between 1600 and that year.
 
 year1 = 1600
-year2 = eval(input('Enter a year: '))
+year2 = eval(input("Enter a year: "))
 
 # Assuming year2 is always after year1, so:
 if year1 >= year2:
@@ -17,7 +17,9 @@ year1_div100 = year1 // 100
 year1_div400 = year1 // 400
 
 year1_leaps = year1_div4  # A year is a leap year if it is divisible by 4
-year1_leaps = year1_leaps - year1_div100  # except that years divisible by 100 are not leap years
+year1_leaps = (
+    year1_leaps - year1_div100
+)  # except that years divisible by 100 are not leap years
 year1_leaps = year1_leaps + year1_div400  # unless they are also divisible by 400
 
 year2_div4 = year2 // 4

@@ -8,8 +8,8 @@
 # a letter and prints out the index of the first occurrence of the letter in the string. If the
 # letter is not in the string, the program should say so.
 
-s = input('Enter a string: ')
-l = input('Enter a letter: ')
+s = input("Enter a string: ")
+l = input("Enter a letter: ")
 
 flag = False
 for i in range(len(s)):
@@ -17,23 +17,22 @@ for i in range(len(s)):
         flag = True
         break
 if flag:
-    print('The letter is in the string.')
-else:    
-    print('The letter is not in the string.')
+    print("The letter is in the string.")
+else:
+    print("The letter is not in the string.")
 
 cnt = 0
 for i in range(len(s)):
     if s[i] == l:
         cnt += 1
-print('The letter appears {} times in the string.'.format(cnt))
+print("The letter appears {} times in the string.".format(cnt))
 
 idx = -1
 for i in range(len(s)):
     if s[i] == l:
         idx = i
         break
-if idx != -1:  
-    print('The letter is in the string at index {}.'.format(idx))
+if idx != -1:
+    print("The letter is in the string at index {}.".format(idx))
 else:
-    print('The letter is not in the string.')
-    
+    print("The letter is not in the string.")

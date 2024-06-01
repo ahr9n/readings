@@ -4,11 +4,11 @@
 # should alternate the characters of the two strings. For example, if the user enters abcde and
 # ABCDE the program should print out AaBbCcDdEe .
 
-first_string = input('Enter a string: ')
-second_string = input('Enter another string: ')
+first_string = input("Enter a string: ")
+second_string = input("Enter another string: ")
 
 if len(first_string) != len(second_string):
-    print('The strings are not the same length.')
+    print("The strings are not the same length.")
 else:
     for i in range(len(first_string)):
-        print(second_string[i] + first_string[i], end='')
+        print(second_string[i] + first_string[i], end="")

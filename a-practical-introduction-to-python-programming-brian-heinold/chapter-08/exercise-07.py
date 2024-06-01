@@ -15,4 +15,4 @@ for i in range(1000):
     if lott == user:
         avg = avg + 1
 
-print('Average number of drawings:', round(1000 / avg, 4))
+print("Average number of drawings:", round(1000 / avg, 4))

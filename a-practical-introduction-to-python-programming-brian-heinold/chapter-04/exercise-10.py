@@ -16,10 +16,10 @@ from random import randint
 for i in range(1, 11):
     a = randint(1, 100)  # for kids ;)
     b = randint(1, 100)
-    print('Question ', i, ': ', a, ' x ', b, ' = ', sep='', end='')
-    
+    print("Question ", i, ": ", a, " x ", b, " = ", sep="", end="")
+
     c = eval(input())
     if a * b == c:
-        print('Right!')
+        print("Right!")
     else:
-        print('Wrong. The answer is', a * b)
+        print("Wrong. The answer is", a * b)

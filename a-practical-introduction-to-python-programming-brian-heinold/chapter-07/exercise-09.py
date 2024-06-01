@@ -20,4 +20,4 @@ for i in range(10000):
 for i in range(1, 12):
     rolls_freq[i] = rolls_freq[i] / 10000
     # probability of rolls
-    print('percentage of rolls that come out to be', i + 1, 'is', rolls_freq[i] * 100)
+    print("percentage of rolls that come out to be", i + 1, "is", rolls_freq[i] * 100)

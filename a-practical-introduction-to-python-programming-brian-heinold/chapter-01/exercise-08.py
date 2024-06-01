@@ -6,12 +6,12 @@
 # Enter the second number: 5
 # Enter the third number: 3
 
-first = eval(input('Enter the first number: '))
-second = eval(input('Enter the second number: '))
-third = eval(input('Enter the third number: '))
+first = eval(input("Enter the first number: "))
+second = eval(input("Enter the second number: "))
+third = eval(input("Enter the third number: "))
 
 total = first + second + third
 average = (first + second + third) / 3
 
-print('Total of numbers is:', total)  # output: 15
-print('Average of numbers is:', average)  # output: 5.0
+print("Total of numbers is:", total)  # output: 15
+print("Average of numbers is:", average)  # output: 5.0

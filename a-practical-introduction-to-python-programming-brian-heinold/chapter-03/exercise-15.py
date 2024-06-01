@@ -20,4 +20,4 @@ for angle_degree in range(0, 346, 15):
     sine = round(math.sin(angle_radian), 4)
     cosine = round(math.cos(angle_radian), 4)
 
-    print(angle_degree, '---', sine, cosine)
+    print(angle_degree, "---", sine, cosine)

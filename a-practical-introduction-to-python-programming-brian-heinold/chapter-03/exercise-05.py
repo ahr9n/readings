@@ -6,5 +6,4 @@ from random import randint
 
 for i in range(1, 51):
     number = randint(1, i + 1)
-    print(i, ': ', number, sep='')
-    
+    print(i, ": ", number, sep="")

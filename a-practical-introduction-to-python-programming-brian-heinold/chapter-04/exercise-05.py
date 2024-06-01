@@ -4,9 +4,9 @@
 from random import randint
 
 number = randint(1, 10)
-guess = eval(input('Guess a number between 1 and 10: '))
+guess = eval(input("Guess a number between 1 and 10: "))
 
 if number == guess:
-    print('You are right!')
+    print("You are right!")
 else:
-    print('You are wrong.')
+    print("You are wrong.")

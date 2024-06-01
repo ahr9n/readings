@@ -4,7 +4,7 @@
 
 import math
 
-number = eval(input('Enter a number: '))
+number = eval(input("Enter a number: "))
 
 # Efficient algorithm. Time Complexity: O(sqrt(n))
 root = math.floor(math.sqrt(number))

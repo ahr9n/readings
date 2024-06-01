@@ -8,9 +8,9 @@ for i in range(1, 1001):
     CUBE = math.ceil(i ** (1 / 3))
     FIFTH = math.ceil(i ** (1 / 4))
 
-    perfect_square = (SQRT * SQRT == i)
-    perfect_cube = (CUBE * CUBE * CUBE == i)
-    perfect_fifth = (FIFTH * FIFTH * FIFTH * FIFTH == i)
+    perfect_square = SQRT * SQRT == i
+    perfect_cube = CUBE * CUBE * CUBE == i
+    perfect_fifth = FIFTH * FIFTH * FIFTH * FIFTH == i
 
     if not perfect_square and not perfect_cube and not perfect_fifth:
         cnt += 1

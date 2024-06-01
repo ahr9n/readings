@@ -5,4 +5,3 @@ from random import randint
 for i in range(50):
     number = randint(3, 6)
     print(number)
-    

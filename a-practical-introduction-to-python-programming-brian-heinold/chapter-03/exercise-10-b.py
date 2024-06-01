@@ -3,18 +3,18 @@
 # a program that asks the user to enter a power. Then find the last two digits of 2 raised to
 # that power.
 
-power = eval(input('Enter a power: '))
+power = eval(input("Enter a power: "))
 
-last_digits = (2 ** power) % 100
+last_digits = (2**power) % 100
 
 # good to show two digits, even with leading zero
 leading_zero = 0
-if last_digits < 10:  
+if last_digits < 10:
     leading_zero += 1
 
-print('The last two digits of 2 raised to that power are: ', end='')
+print("The last two digits of 2 raised to that power are: ", end="")
 if leading_zero == 1:
-    print('0', last_digits, sep='')
+    print("0", last_digits, sep="")
 else:
     print(last_digits)
 

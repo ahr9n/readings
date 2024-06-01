@@ -2,9 +2,9 @@
 # unless they are also divisible by 400. Write a program that asks the user for a year and prints
 # out whether it is a leap year or not.
 
-year = eval(input('Enter a year: '))
+year = eval(input("Enter a year: "))
 
 if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
-    print('It is a leap year.')
+    print("It is a leap year.")
 else:
-    print('It is not a leap year.')
+    print("It is not a leap year.")

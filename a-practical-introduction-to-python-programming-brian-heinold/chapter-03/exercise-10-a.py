@@ -3,10 +3,10 @@
 # program that asks the user to enter a power. Then find the last digit of 2 raised to that
 # power.
 
-power = eval(input('Enter a power: '))
+power = eval(input("Enter a power: "))
 
-last_digit = (2 ** power) % 10
-print('The last digit of 2 raised to that power is:', last_digit)
+last_digit = (2**power) % 10
+print("The last digit of 2 raised to that power is:", last_digit)
 
 # Another tricky solution for LARGE powers:
 # 1. You don't need to get the all real number of (2 ** power)

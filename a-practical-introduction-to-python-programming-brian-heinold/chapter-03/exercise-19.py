@@ -10,13 +10,12 @@
 # 6 7 8 9 0 1 2 3
 # 4 5 6 7 8 9 0 1
 
-width = eval(input('Enter the width: '))
-height = eval(input('Enter the height: '))
+width = eval(input("Enter the width: "))
+height = eval(input("Enter the height: "))
 
 now = 0
 for i in range(height):
     for j in range(width):
-        print(now, end=' ')
+        print(now, end=" ")
         now = (now + 1) % 10
-    print('')  # new line
-    
+    print("")  # new line

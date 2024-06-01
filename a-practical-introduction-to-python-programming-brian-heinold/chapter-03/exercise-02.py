@@ -7,6 +7,6 @@ x = randint(1, 50)  # base
 y = randint(2, 5)  # exp or power
 z = x**y  # same as pow(x, y)
 
-print('Base:', x)
-print('Power:', y)
-print('Result:', z)
+print("Base:", x)
+print("Power:", y)
+print("Result:", z)

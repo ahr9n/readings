@@ -5,13 +5,13 @@
 # Enter your string: Qbert
 # Q*ert!!!
 
-s = input('Enter your string: ')
+s = input("Enter your string: ")
 
 new_string = s[0]
 if len(s) > 1:
-    new_string += '*'
+    new_string += "*"
     if len(s) >= 2:
-        new_string += s[2:len(s)]
-new_string += '!!!'
+        new_string += s[2 : len(s)]
+new_string += "!!!"
 
 print(new_string)

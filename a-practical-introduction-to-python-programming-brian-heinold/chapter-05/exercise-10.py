@@ -6,10 +6,10 @@
 # a message warning the user that a value over 100 has been entered.
 # (e) Drop the two lowest scores and print out the average of the rest of them.
 
-first = eval(input('Enter the #1 test score: '))
-second = eval(input('Enter the #2 test score: '))
-third = eval(input('Enter the #3 test score: '))
-fourth = eval(input('Enter the #4 test score: '))
+first = eval(input("Enter the #1 test score: "))
+second = eval(input("Enter the #2 test score: "))
+third = eval(input("Enter the #3 test score: "))
+fourth = eval(input("Enter the #4 test score: "))
 
 average = first + second + third + fourth
 highest1 = max(max(first, second), max(third, fourth))
@@ -35,7 +35,7 @@ elif fourth == lowest1:
     lowest2 = min(first, min(third, second))
 
 for i in range(5, 11):
-    print('Enter the #', i, ' test score: ', sep='', end='')
+    print("Enter the #", i, " test score: ", sep="", end="")
     now = eval(input())
     average += now
 
@@ -54,14 +54,14 @@ for i in range(5, 11):
 average /= 10
 
 if highest1 > 100:
-    print('Warning: A value over 100 has been entered!')
+    print("Warning: A value over 100 has been entered!")
 
-print('The highest test score is:', highest1)
-print('The lowest test score is:', lowest1)
-print('The average of test scores is:', average)
-print('The second highest score is:', highest2)
+print("The highest test score is:", highest1)
+print("The lowest test score is:", lowest1)
+print("The average of test scores is:", average)
+print("The second highest score is:", highest2)
 
 average *= 10
 average -= lowest1 + lowest2
 average /= 8
-print('After dropping the two lowest scores, the average of the rest is:', average)
+print("After dropping the two lowest scores, the average of the rest is:", average)

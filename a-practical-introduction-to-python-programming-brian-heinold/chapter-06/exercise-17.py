@@ -7,7 +7,7 @@
 # yzabcdefghijklmnopqrstuvwx
 # zabcdefghijklmnopqrstuvwxy
 
-line = 'abcdefghijklmnopqrstuvwxyz'
+line = "abcdefghijklmnopqrstuvwxyz"
 for j in range(1, 27):
     print(line)
     # create a variable for the string

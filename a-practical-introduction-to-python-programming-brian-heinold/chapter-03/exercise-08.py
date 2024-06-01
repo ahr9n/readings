@@ -2,9 +2,9 @@
 # and seconds that is. For instance, 200 seconds is 3 minutes and 20 seconds. [Hint: Use the //
 # operator to get minutes and the % operator to get seconds.]
 
-seconds = eval(input('Enter a number of seconds: '))
+seconds = eval(input("Enter a number of seconds: "))
 
 minutes = seconds // 60
 seconds %= 60
 
-print('That means', minutes, 'minutes and', seconds, 'seconds.')
+print("That means", minutes, "minutes and", seconds, "seconds.")

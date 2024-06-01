@@ -12,8 +12,10 @@
 # now toll-free at 1-800-314-1592. We cannot offer such a low
 # rate for long, George, so call right away.
 
-name = input('Enter name: ')
-print(f'Dear {name},')
-print(f'I am pleased to offer you our new Platinum Plus Rewards card at a special introductory APR of 47.99%.\n'
-      f'{name}, an offer like this does not come along every day, so I urge you to call now toll-free at 1-800-314-1592.\n'
-      f'We cannot offer such a low rate for long, {name}, so call right away.')
+name = input("Enter name: ")
+print(f"Dear {name},")
+print(
+    f"I am pleased to offer you our new Platinum Plus Rewards card at a special introductory APR of 47.99%.\n"
+    f"{name}, an offer like this does not come along every day, so I urge you to call now toll-free at 1-800-314-1592.\n"
+    f"We cannot offer such a low rate for long, {name}, so call right away."
+)

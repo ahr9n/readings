@@ -4,7 +4,7 @@
 # EE
 # YY
 
-s = input('Enter a string: ')
+s = input("Enter a string: ")
 
 for c in s:
     print(c * 2)

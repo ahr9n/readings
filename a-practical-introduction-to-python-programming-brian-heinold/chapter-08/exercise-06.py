@@ -2,6 +2,7 @@
 # numbers between 1 and 48.
 
 import random
+
 # create a list of numbers from 1 to 48
 numbers = list(range(1, 49))
 lottery_numbers = []

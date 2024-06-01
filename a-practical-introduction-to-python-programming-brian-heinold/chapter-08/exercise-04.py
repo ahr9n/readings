@@ -6,11 +6,12 @@
 # that the period is in the right place.
 
 import random
-sentence = input('Enter a sentence: ').split()  # sentence is a list of words
+
+sentence = input("Enter a sentence: ").split()  # sentence is a list of words
 
 a = sentence
 random.shuffle(a)
-print(' '.join(a))
+print(" ".join(a))
 
 b = sentence
 # remove the last character of the last word
@@ -22,5 +23,5 @@ random.shuffle(b)
 # capitalize the first word
 b[0] = b[0].capitalize()
 # add the period
-b[-1] = b[-1] + '.'
-print(' '.join(b))
+b[-1] = b[-1] + "."
+print(" ".join(b))

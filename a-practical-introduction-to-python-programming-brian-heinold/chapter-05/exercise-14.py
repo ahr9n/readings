@@ -37,10 +37,12 @@ for i in range(1000):
     if guess == prize:
         switch_cnt += 1
 
-percentage, switch_percentage = round((cnt / 1000) * 100, 2), round((switch_cnt / 1000) * 100, 2)
-print('With three doors:')
-print('Percentage of the time you would win by not switching is:', percentage)
-print('Percentage of the time you would win if you switch is:', switch_percentage)
+percentage, switch_percentage = round((cnt / 1000) * 100, 2), round(
+    (switch_cnt / 1000) * 100, 2
+)
+print("With three doors:")
+print("Percentage of the time you would win by not switching is:", percentage)
+print("Percentage of the time you would win if you switch is:", switch_percentage)
 
 # Simulating playing the game 10000 times with 4 doors
 switch_cnt, cnt = 0, 0
@@ -99,9 +101,11 @@ for i in range(1000):
     if guess == prize:
         switch_cnt += 1
 
-percentage, switch_percentage = round((cnt / 1000) * 100, 2), round((switch_cnt / 1000) * 100, 2)
-print('With four doors:')
-print('Percentage of the time you would win by not switching is:', percentage)
-print('Percentage of the time you would win if you switch is:', switch_percentage)
+percentage, switch_percentage = round((cnt / 1000) * 100, 2), round(
+    (switch_cnt / 1000) * 100, 2
+)
+print("With four doors:")
+print("Percentage of the time you would win by not switching is:", percentage)
+print("Percentage of the time you would win if you switch is:", switch_percentage)
 
 # nice explanation for the game: https://www.youtube.com/watch?v=4Lb-6rxZxx0

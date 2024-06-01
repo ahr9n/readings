@@ -2,9 +2,9 @@
 # of that integer.
 import math
 
-integer = int(input('Please enter an integer: '))
+integer = int(input("Please enter an integer: "))
 
-# factorize the integer == devisors 
+# factorize the integer == devisors
 factors = []
 SQRT = math.ceil(math.sqrt(integer))
 for i in range(1, SQRT + 1):

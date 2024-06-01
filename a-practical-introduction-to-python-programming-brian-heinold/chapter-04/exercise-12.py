@@ -6,9 +6,15 @@
 # 7 people, and the amount left over is 2 pieces. By looking at the bowl, you can tell that there
 # are less than 200 pieces. Write a program to determine how many pieces are in the bowl.
 
-among5 = eval(input('Would the candy be divided evenly among 5 people? Yes (1) or No (2)? '))
-among6 = eval(input('Would the candy be divided evenly among 6 people? Yes (1) or No (2)? '))
-among7 = eval(input('Would the candy be divided evenly among 7 people? Yes (1) or No (2)? '))
+among5 = eval(
+    input("Would the candy be divided evenly among 5 people? Yes (1) or No (2)? ")
+)
+among6 = eval(
+    input("Would the candy be divided evenly among 6 people? Yes (1) or No (2)? ")
+)
+among7 = eval(
+    input("Would the candy be divided evenly among 7 people? Yes (1) or No (2)? ")
+)
 
 found = 0
 for i in range(1, 200):
@@ -18,10 +24,10 @@ for i in range(1, 200):
 
     if flag5 and flag6 and flag7:
         if found:
-            print(' or', i, end='')
+            print(" or", i, end="")
         else:
-            print('Pieces of candy could be:', i, end='')
+            print("Pieces of candy could be:", i, end="")
         found = 1
 
 if not found:
-    print('Impossible to guess.')
+    print("Impossible to guess.")

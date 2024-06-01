@@ -10,4 +10,4 @@
 for i in range(20):
     number = i + 1
     square = number * number
-    print(number, '---', square)
+    print(number, "---", square)

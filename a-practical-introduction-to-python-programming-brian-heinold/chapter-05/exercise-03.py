@@ -3,7 +3,7 @@
 
 from math import log
 
-n = eval(input('Enter a value: '))
+n = eval(input("Enter a value: "))
 
 answer = 0
 for i in range(1, n + 1):
